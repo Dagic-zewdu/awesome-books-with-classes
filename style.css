@@ -1,0 +1,69 @@
+
+body {
+  margin: 0;
+}
+
+#added-books {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.book-list {
+  list-style-type: none;
+}
+
+.card {
+  border: 2px solid #eee;
+  width: 70%;
+  margin: 15px 0 15px 0;
+}
+
+.heading {
+  text-align: center;
+  font-size: 30px;
+}
+
+.book-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px 0 0 0;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  width: 52%;
+  align-items: flex-end;
+}
+
+.my-10 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.input-item {
+  width: 100%;
+  padding: 10px;
+}
+
+.btn-submit {
+  width: 20%;
+  padding: 10px;
+}
+
+.book-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.bg-black {
+  background-color: rgb(209, 207, 207);
+}
+
+hr {
+  width: 30%;
+}
