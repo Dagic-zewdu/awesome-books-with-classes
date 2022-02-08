@@ -1,0 +1,51 @@
+
+body {
+  margin: 0;
+}
+#added-books {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.book-list {
+  list-style-type: none;
+}
+
+.card {
+ border: 2px solid #eee;
+ box-shadow: 1px solid #111;
+ border-radius: 10px;
+ padding: 10px;
+ width: 50%;
+}
+
+.book-list-title{
+  text-align: center;
+}
+
+.book-form{
+  display: flex;
+  justify-content: center;
+}
+
+#form {
+ display: flex;
+ flex-direction: column;
+ width: 50%;
+ align-items: flex-end;
+}
+.my-10 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.input-item {
+  width: 100%;
+  padding: 10px;
+}
+.btn-submit {
+  width: 20%;
+ padding: 10px; 
+}
+/**/
