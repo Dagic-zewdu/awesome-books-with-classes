@@ -16,17 +16,20 @@ body {
 .card {
  border: 2px solid #eee;
  box-shadow: 1px solid #111;
- border-radius: 10px;
  width: 70%;
+ margin: 15px 0 15px 0;
 }
 
-.book-list-title{
+.heading{
   text-align: center;
+  font-size: 30px;
 }
 
 .book-form{
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px 0 0 0;
 }
 
 #form {
@@ -47,4 +50,18 @@ body {
   width: 20%;
  padding: 10px; 
 }
-/**/
+
+.book-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+
+}
+
+.bg-black {
+  background-color: rgb(209, 207, 207);
+}
+
+hr {
+  width: 30%;
+}
