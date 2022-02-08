@@ -17,8 +17,7 @@ body {
  border: 2px solid #eee;
  box-shadow: 1px solid #111;
  border-radius: 10px;
- padding: 10px;
- width: 50%;
+ width: 70%;
 }
 
 .book-list-title{
@@ -33,7 +32,7 @@ body {
 #form {
  display: flex;
  flex-direction: column;
- width: 50%;
+ width: 52%;
  align-items: flex-end;
 }
 .my-10 {
