@@ -23,12 +23,17 @@ const updateStorage = () => {
 const renderBooks = () => {
   const Books = booksClass.getBooks();
   let li = '';
-  Books.forEach((book, index) => {
-    li += `<li class="book-item ${index % 2 ? '' : 'bg-black'}">
+  if (Books.length) {
+    Books.forEach((book, index) => {
+      li += `<li class="book-item ${index % 2 ? '' : 'bg-black'}">
        <div class="book-title">"${book.title}" by ${book.author}</div>
        <button class="btn-remove" id=${book.id}>remove</button>
    </li>`;
-  });
+    });
+  } else {
+    li += '<li class="center">Book list is empty!</li>';
+  }
+
   bookContainer.innerHTML = li;
   const removeBtn = document.querySelectorAll('.btn-remove');
   removeBtn.forEach((button) => button.addEventListener('click', () => {
@@ -45,6 +50,7 @@ const addBooks = (title, author, id) => {
 };
 function updateUserInterface() {
   const retrievedData = localStorage.getItem('booklist');
+  tab = localStorage.getItem('tab');
   const bookList = JSON.parse(retrievedData);
   bookList.forEach((book) => booksClass.addBooks(book.title, book.author, book.id));
   renderBooks();
@@ -65,6 +71,7 @@ const render = () => {
     contacts.style.display = 'block';
     bookContainerSection.style.display = 'none';
   }
+  localStorage.setItem('tab', tab);
 };
 
 if (!localStorage.getItem('booklist')) {

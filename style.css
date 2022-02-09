@@ -85,11 +85,10 @@ hr {
 .nav-container {
   display: flex;
   list-style: none;
-
 }
 
 .nav-item {
-padding: 8px;
+  padding: 8px;
 }
 
 .vl {
@@ -125,3 +124,8 @@ section {
   width: 100%;
 }
 
+.center {
+  text-align: center;
+  padding: 15px 0;
+  color: crimson;
+}
