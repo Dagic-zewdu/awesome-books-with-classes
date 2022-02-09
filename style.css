@@ -72,36 +72,3 @@ body {
 hr {
   width: 30%;
 }
-
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 20px;
-  margin: 5px 5px 20px 5px;
-  border: 2px solid #eee;
-}
-
-.nav-container {
-  display: flex;
-  list-style: none;
-
-}
-
-.nav-item {
-padding: 8px;
-}
-
-.vl {
-  border-right: 2px solid #eee;
-}
-
-.contact-section {
-  width: 70%;
-  text-align: left;
-  margin: auto;
-}
-
-.contact-info {
-  margin: 0 0 20px 0;
-}
