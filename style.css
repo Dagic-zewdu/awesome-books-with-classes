@@ -105,3 +105,23 @@ padding: 8px;
 .contact-info {
   margin: 0 0 20px 0;
 }
+
+.heading-4 {
+  padding-top: 50px;
+  text-align: center;
+  margin-top: 40px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  height: 50px;
+}
+
+section {
+  min-height: 70vh;
+}
+
+.message {
+  color: green;
+  text-align: center;
+  width: 100%;
+}
+
