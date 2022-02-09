@@ -47,6 +47,8 @@ const addBooks = (title, author, id) => {
   renderBooks();
   updateStorage();
   message.textContent = 'Book added';
+  TitleInputField.value = '';
+  AuthorInputField.value = '';
 };
 function updateUserInterface() {
   const retrievedData = localStorage.getItem('booklist');
