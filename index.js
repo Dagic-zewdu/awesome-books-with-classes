@@ -1,4 +1,4 @@
-import { DateTime } from './node_modules/luxon/build/es6/luxon.js';
+import { DateTime } from './modules/luxon/build/es6/luxon.js';
 import Books from './modules/class/books.class.js';
 import selector from './modules/selectors/selector.js';
 
@@ -43,7 +43,7 @@ const addBooks = (title, author, id) => {
   selector.AuthorInputField.value = '';
 };
 
-function updateUserInterface() {
+const updateUserInterface=()=> {
   const retrievedData = localStorage.getItem('booklist');
   tab = localStorage.getItem('tab');
   const bookList = JSON.parse(retrievedData);
