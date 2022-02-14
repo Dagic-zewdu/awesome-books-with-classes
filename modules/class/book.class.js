@@ -6,3 +6,4 @@ export default class Book {
     this.author = author;
   }
 }
+export const d = () => {};
