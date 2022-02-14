@@ -1,4 +1,4 @@
-import { DateTime } from './modules/luxon/build/es6/luxon.js';
+import DateNowString from './modules/luxon/luxon.js';
 import Books from './modules/class/books.class.js';
 import selector from './modules/selectors/selector.js';
 
@@ -43,13 +43,13 @@ const addBooks = (title, author, id) => {
   selector.AuthorInputField.value = '';
 };
 
-const updateUserInterface=()=> {
+const updateUserInterface = () => {
   const retrievedData = localStorage.getItem('booklist');
   tab = localStorage.getItem('tab');
   const bookList = JSON.parse(retrievedData);
   bookList.forEach((book) => booksClass.addBooks(book.title, book.author, book.id));
   renderBooks();
-}
+};
 
 const render = () => {
   if (tab === 'book-list') {
@@ -102,5 +102,4 @@ selector.form.addEventListener('submit', (e) => {
   addBooks(title, author);
 });
 
-const dt = DateTime.now();
-selector.TimeContainer.textContent = dt.toLocaleString(DateTime.DATETIME_MED);
+selector.TimeContainer.textContent = DateNowString();
