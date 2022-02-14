@@ -4,6 +4,7 @@
   "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint:js": "eslint main.js",
     "lint:css": "stylelint **/*.{css,scss}",
@@ -14,15 +15,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Sboursen/Chess-World-Championship.git"
+    "url": ""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Sboursen/Chess-World-Championship/issues"
+    "url": "https://github.com/Dagic-zewdu/awesome-books-with-classes.git"
   },
-  "homepage": "https://github.com/Sboursen/Chess-World-Championship#readme",
+  "homepage": "https://dagic-zewdu.github.io/awesome-books-with-classes/",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "eslint": "^7.32.0",
@@ -33,5 +34,8 @@
     "stylelint-config-standard": "^21.0.0",
     "stylelint-csstree-validator": "^1.9.0",
     "stylelint-scss": "^3.21.0"
+  },
+  "dependencies": {
+    "luxon": "^2.3.0"
   }
 }
