@@ -4,6 +4,7 @@
   "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint:js": "eslint main.js",
     "lint:css": "stylelint **/*.{css,scss}",
@@ -20,9 +21,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Sboursen/Chess-World-Championship/issues"
+    "url": "https://github.com/Dagic-zewdu/awesome-books-with-classes.git"
   },
-  "homepage": "https://github.com/Sboursen/Chess-World-Championship#readme",
+  "homepage": "https://dagic-zewdu.github.io/awesome-books-with-classes/",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "eslint": "^7.32.0",
